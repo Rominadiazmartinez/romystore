@@ -2,10 +2,28 @@ import { AppBar, Button, Drawer, IconButton, Toolbar, Typography } from "@mui/ma
 import NavListDrawer from "./NavListDrawer";
 import { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
+import { AccountCircle } from "@mui/icons-material";
 import HomeIcon from '@mui/icons-material/Home';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import InventoryIcon from '@mui/icons-material/Inventory';
 
+
+const navLinks = [
+    {
+        title: "Home", 
+        path: "#",
+        icon: <HomeIcon/>
+    },
+    {
+        title: "Mi Cuenta", 
+        path: "#cuenta",
+        icon: <AccountCircle/>
+    },
+    {
+        title: "Productos", 
+        path: "#productos",
+        icon: <InventoryIcon/>
+    },
+  ]
 
 
 export default function Navbar(){
